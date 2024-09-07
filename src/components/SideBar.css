@@ -1,0 +1,26 @@
+.sideBarHide {
+  width: 0 !important;
+  opacity: 0; /* Use opacity instead of visibility for a fade-out effect */
+  transition: width 0.2s, opacity 0.2s ease-in-out; /* Smooth transition for width and opacity */
+  overflow: hidden; /* Prevent content from spilling out during transition */
+}
+/* Ensure that the sidebar is fully visible when not hidden */
+.sideBar {
+  opacity: 1; 
+  transition: width 0.5s, opacity 0.5s ease-in-out; /* Same duration as hiding for consistency */
+}
+.sideBarButton {
+  top: 50%;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  padding: 0px;
+  z-index: 10;
+}
+@media (max-width: 767px) {
+  .sideBarButton {
+    visibility: hidden;
+  }
+}

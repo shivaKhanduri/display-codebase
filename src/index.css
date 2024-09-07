@@ -1,0 +1,99 @@
+@import url("./components/Navbar.css");
+@import url("./pages/HomeScreen.css");
+@import url("./components/Questionaire.css");
+@import url("./components/Footer.css");
+@import url("./components/QuestionaireButtons.css");
+@import url("./components/SideBar.css");
+@import url("./pages/QuestionBankMenu.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*
+Unibud Color pallete:
+#ffffff white
+#0083c5 blue (NCS)
+#edebff Lavender
+#6feb88 emerald (Only for some buttons)
+#e23c47 Poppy
+#1d2d44 prussian blue
+
+Unibud Font:
+Thick: Roboto black 900
+Thin: Montserrat light 300
+*/
+
+.ubTheme {
+  background-color: #0083c5 !important;
+  color: #f8f7ff !important;
+}
+.ubWhiteBg {
+  background-color: #edebff !important;
+}
+.ubGreenBg {
+  background-color: #6feb88 !important;
+  color: #1d2d44 !important;
+}
+.ubRedBg {
+  background-color: #e23c47 !important;
+  color: #f8f7ff !important;
+}
+.ubBlueBg {
+  background-color: #162f48 !important;
+  color: #f8f7ff !important;
+}
+.ubBold {
+  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif !important;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4rem;
+}
+.ubBoldSm {
+  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif !important;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2rem;
+}
+.ubLight {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.3rem;
+}
+.ubLightSm {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .ubBold {
+    font-size: 3rem; /* Adjust the font size for smaller screens */
+  }
+
+  .ubLight {
+    font-size: 1rem; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ubBold {
+    font-size: 2rem; /* Further adjust the font size for even smaller screens */
+  }
+
+  .ubLight {
+    font-size: 0.8rem; /* Further adjust the font size for even smaller screens */
+  }
+}
+.unibudLogo {
+  width: 100px;
+  height: 33px;
+  background-color: white;
+}

@@ -1,0 +1,48 @@
+.question {
+  position: relative; /* Set position to relative for absolute positioning of checkbox */
+  margin: 20px 10px 20px 10px; /* Adjusted margin for spacing */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease; /* Transition effect for the hover */
+}
+
+.question:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.question img {
+  max-width: 70%; /* Adjusted to fill the container width */
+  height: auto;
+  margin: 20px; /* Adjusted margin for spacing between images */
+}
+
+.checkboxContainer {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.checkboxContainer input[type="checkbox"] {
+  bottom: 5px;
+  left: 5px;
+  transform: scale(1.5);
+  opacity: 0.7;
+  border-radius: 3px;
+  border: 2px solid #0083c5d3;
+  background-color: #ffffff;
+}
+
+.checkboxContainer input[type="checkbox"]:checked {
+  background-color: #0083c5;
+}
+.questionContainer {
+  height: 75svh;
+  overflow-y: auto;
+}
+.submitButton {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .questionContainer {
+    height: 75svh;
+  }
+}

@@ -1,0 +1,128 @@
+.body {
+  background-color: #162f48;
+}
+.advCustomBg {
+  background-color: #fff3cf;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.heading-color {
+  color: #fff3cf;
+}
+.custom-background {
+  background-color: #fff3cf;
+}
+.pdfSubmitBtn {
+  color: white;
+  background-color: #0182c5;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+.pdfSubmitBtn:hover {
+  background-color: #0180c5d3;
+}
+
+.heroContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 125px;
+}
+
+.heroContainer img {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: start;
+  width: 100%;
+}
+
+.heroContainer .text {
+  grid-row: 1;
+  grid-column: 2;
+  padding-left: 20px;
+}
+.carousel-box {
+  margin: 0 10px;
+  flex: 1;
+}
+
+/* Larger screen styles are default styles */ 
+.carousel-item .d-flex > div {
+  margin: 0 10px; /* default margin */
+  padding: 0 15px; /* default padding */
+}
+
+/* Apply specific styles for small screens */
+@media (max-width: 768px) {
+  .carousel-item .d-flex {
+    flex-direction: column; /* Stack boxes vertically */
+  }
+
+  .carousel-item .d-flex > div {
+    margin: 0; /* Reset margin for small screens */
+    padding: 0; /* Reset padding for small screens */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: none; /* Hide navigation arrows on small screens if not needed */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: left;
+  }
+
+  .heroContainer img {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: start;
+    width: 100%;
+  }
+
+  .heroContainer .text {
+    grid-row: 2;
+    grid-column: 1;
+    padding-left: 0;
+  }
+}
+
+.box {
+  font-family: "Montserrat", sans-serif !important;
+  background-color: #162f48;
+  padding: 1.5em;
+  border-radius: 1.2em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
+  height: 40vh;
+}
+
+.initial-hidden {
+  opacity: 0;
+  transform: translateY(200px);
+}
+
+.box1 {
+  background-color: #76b9f5;
+  color: #fff;
+}
+.box2 {
+  background-color: #fff3cf;
+  color: black;
+}
+.box3 {
+  background-color: #fd8484;
+  color: #fff;
+}
+/* Default styles applied for larger screens */
+.carousel-item .d-flex > div {
+  margin: 0 10px; /* default margin */
+  padding: 0 15px; /* default padding */
+}

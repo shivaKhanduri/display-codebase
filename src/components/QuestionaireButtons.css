@@ -1,0 +1,14 @@
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 375px) {
+  .buttonsContainer {
+    flex-flow: column-reverse;
+    gap: 2px;
+  }
+  .buttonsContainer button{
+    width: 100%;
+    margin: 0 !important;
+  }
+}

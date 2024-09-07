@@ -1,0 +1,23 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.3em;
+  font-family: monospace;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.footerContent {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    position: static;
+  }
+}
